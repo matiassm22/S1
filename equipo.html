@@ -6,34 +6,6 @@
   <title>TechMarket USS | Nuestro Equipo</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .team-card {
-      background-color: var(--color-content-bg);
-      border: 1px solid #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    }
-    .team-avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin: 0 auto 1.5rem;
-      background-color: #e5e7eb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      color: var(--color-accent);
-    }
-  </style>
 </head>
 <body>
 
@@ -67,31 +39,50 @@
 
   <!-- Contenido Principal -->
   <main>
-    <section class="section" style="background-color: var(--color-gray-bg);">
-      <h1 class="section-title">Nuestro Equipo</h1>
-      <p style="text-align: center; color: #4b5563; max-width: 600px; margin: 0 auto;">Conoce a los fundadores y expertos detrás del marketplace de tecnología. Nuestro equipo combina pasión por el hardware con experiencia comercial.</p>
+    <!-- La Leyenda del Equipo -->
+    <section class="seccion-leyenda" style="margin-top:0; padding-top: 4rem;">
+      <div class="leyenda-content">
+        <h2>La Leyenda de Los Dos Destinos</h2>
+        <div class="texto-leyenda">
+          En los albores de la era digital, dos mentes brillantes convergieron en el ciberespacio. Por un lado, <span class="texto-destacado">Matias</span>, estratega de negocios y visionario corporativo, trazaba la arquitectura perfecta para una plataforma robusta. Por otro lado, <span class="texto-destacado">Irian</span>, maestra del código fuente, tejía los ecosistemas de software más seguros y vanguardistas de la red. Juntos, uniendo visión comercial y poder técnico, dieron vida a la primera semilla de lo que hoy es el mercado definitivo para la tecnología.
+        </div>
+        <blockquote class="cita-leyenda">
+          "Donde el hardware y la amistad convergen, nacen los mundos digitales."
+        </blockquote>
+      </div>
       
-      <div class="team-grid">
-        <article class="team-card">
-          <div class="team-avatar"><i class="fa-solid fa-user-tie"></i></div>
-          <h3 style="margin-bottom: 0.5rem; color: var(--color-text-dark);">Carlos Rodríguez</h3>
-          <p style="color: var(--color-accent); font-weight: 600; margin-bottom: 1rem;">CEO & Founder</p>
-          <p style="color: #6b7280; font-size: 0.9rem;">Especialista en negocios digitales y entusiasta del overclocking.</p>
+      <!-- Efecto de Avatares (Sin fotos) -->
+      <div class="grupo-visual">
+        <div class="avatar-placeholder"><i class="fa-solid fa-user-tie"></i></div>
+        <div class="avatar-placeholder"><i class="fa-solid fa-code"></i></div>
+      </div>
+    </section>
+
+    <!-- Tarjetas de Miembros estilo Productos (Sin fotos) -->
+    <section class="section products-bg">
+      <h2 class="section-title">Nuestros Fundadores</h2>
+      <div class="products-grid" style="justify-content: center; display: flex; gap: 2rem;">
+        
+        <article class="product-card member-card" style="width: 100%; max-width: 400px;">
+          <div class="product-image-placeholder"><i class="fa-solid fa-user-tie"></i></div>
+          <div class="product-info">
+            <h3>Matias Muñoz</h3>
+            <p style="color: var(--color-accent); font-weight: 600;">CEO & Founder</p>
+            <p>Especialista en negocios digitales y entusiasta del overclocking.</p>
+            <a href="#" class="btn btn-secondary mt-3">Ver Perfil</a>
+          </div>
         </article>
 
-        <article class="team-card">
-          <div class="team-avatar"><i class="fa-solid fa-code"></i></div>
-          <h3 style="margin-bottom: 0.5rem; color: var(--color-text-dark);">Ana Silva</h3>
-          <p style="color: var(--color-accent); font-weight: 600; margin-bottom: 1rem;">CTO & Lead Developer</p>
-          <p style="color: #6b7280; font-size: 0.9rem;">Experta en desarrollo web y amante del ecosistema de software libre.</p>
+        <article class="product-card member-card" style="width: 100%; max-width: 400px;">
+          <div class="product-image-placeholder"><i class="fa-solid fa-code"></i></div>
+          <div class="product-info">
+            <h3>Irian Lopez</h3>
+            <p style="color: var(--color-accent); font-weight: 600;">CTO & Lead Developer</p>
+            <p>Experta en desarrollo web y amante del ecosistema de software libre.</p>
+            <a href="#" class="btn btn-secondary mt-3">Ver Perfil</a>
+          </div>
         </article>
 
-        <article class="team-card">
-          <div class="team-avatar"><i class="fa-solid fa-headset"></i></div>
-          <h3 style="margin-bottom: 0.5rem; color: var(--color-text-dark);">Felipe Méndez</h3>
-          <p style="color: var(--color-accent); font-weight: 600; margin-bottom: 1rem;">Head of Support</p>
-          <p style="color: #6b7280; font-size: 0.9rem;">A cargo del ensamblaje y control de calidad de todos nuestros productos.</p>
-        </article>
       </div>
     </section>
   </main>
