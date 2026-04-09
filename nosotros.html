@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - TechMarket USS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMarket USS | Nosotros</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <!-- Placeholder para la Navbar -->
-        <nav>Navbar</nav>
-    </header>
-    <main>
-        <h1>Nosotros</h1>
-    </main>
-    <footer>
-        <!-- Placeholder para el pie de página -->
-        <p>Pie de página</p>
-    </footer>
+
+  <!-- Top Bar: Login -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <span class="top-bar-text">Bienvenido a TechMarket USS</span>
+      <form class="login-form" onsubmit="event.preventDefault(); alert('Inicio de sesión simulado exitoso.');">
+        <input type="email" placeholder="usuario@correo.com" required class="login-input">
+        <input type="password" placeholder="Contraseña" required class="login-input">
+        <button type="submit" class="btn-login">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Navegación -->
+  <header class="main-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">TechMarket USS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html" style="color: var(--color-accent);">Nosotros</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="section">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--color-text-dark);">Sobre Nosotros</h1>
+        <p style="font-size: 1.1rem; color: #4b5563; margin-bottom: 2rem;">
+          TechMarket USS nació como un proyecto en el corazón del laboratorio de la universidad, motivado por la falta de un mercado interno eficiente y seguro para el intercambio y venta de tecnología y productos digitales entre estudiantes, académicos y profesionales.
+        </p>
+        <div style="background-color: var(--color-gray-bg); padding: 2rem; border-radius: 0.5rem; text-align: left; margin-bottom: 2rem;">
+          <h2 style="color: var(--color-accent); margin-bottom: 1rem;">Nuestra Misión</h2>
+          <p style="color: #4b5563;">
+            Brindar los mejores componentes de hardware al mejor precio posible. Simplificar y hacer seguro el proceso de actualizar equipos tecnológicos brindando asesoría gratuita a los nuevos entusiastas del PC building.
+          </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="TechMarket Code" style="width: 100%; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechMarket USS</h4>
+        <p>Tu marketplace tecnológico de confianza.</p>
+        <p>Ubicados en el Campus Central.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="productos.html">Tienda</a></li>
+          <li><a href="nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="faq.html">Centro de Ayuda</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: soporte@techmarketuss.cl</p>
+        <p>Tel: +56 9 1234 5678</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechMarket USS. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

@@ -1,22 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - TechMarket USS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMarket USS | Galería</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: #fff;
+      padding: 1.5rem 1rem 1rem;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover .gallery-overlay {
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <!-- Placeholder para la Navbar -->
-        <nav>Navbar</nav>
-    </header>
-    <main>
-        <h1>Galería</h1>
-    </main>
-    <footer>
-        <!-- Placeholder para el pie de página -->
-        <p>Pie de página</p>
-    </footer>
+
+  <!-- Top Bar: Login -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <span class="top-bar-text">Bienvenido a TechMarket USS</span>
+      <form class="login-form" onsubmit="event.preventDefault(); alert('Inicio de sesión simulado exitoso.');">
+        <input type="email" placeholder="usuario@correo.com" required class="login-input">
+        <input type="password" placeholder="Contraseña" required class="login-input">
+        <button type="submit" class="btn-login">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Navegación -->
+  <header class="main-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">TechMarket USS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="galeria.html" style="color: var(--color-accent);">Galería</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="section">
+      <h1 class="section-title">Galería de Entregas y Setups</h1>
+      <p style="text-align: center; color: #4b5563; max-width: 600px; margin: 0 auto;">Inspiración directa de nuestros clientes. Mira los ensambles y estaciones de trabajo que han construido usando nuestros componentes.</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Setup Gamer 1">
+          <div class="gallery-overlay">
+            <h4>Setup High-End</h4>
+            <p style="font-size: 0.8rem; margin-top: 0.25rem;">Equipado con RTX 4090</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1603481546238-48724041592d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ensamble Profesional">
+          <div class="gallery-overlay">
+            <h4>Workstation 3D</h4>
+            <p style="font-size: 0.8rem; margin-top: 0.25rem;">Ideal para Blender y Maya</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Streaming Room">
+          <div class="gallery-overlay">
+            <h4>Streaming Room</h4>
+            <p style="font-size: 0.8rem; margin-top: 0.25rem;">Iluminación ARGB Custom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Setup Minimalista">
+          <div class="gallery-overlay">
+            <h4>Setup Productividad</h4>
+            <p style="font-size: 0.8rem; margin-top: 0.25rem;">Limpio y sin cables a la vista</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechMarket USS</h4>
+        <p>Tu marketplace tecnológico de confianza.</p>
+        <p>Ubicados en el Campus Central.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="productos.html">Tienda</a></li>
+          <li><a href="nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="faq.html">Centro de Ayuda</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: soporte@techmarketuss.cl</p>
+        <p>Tel: +56 9 1234 5678</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechMarket USS. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

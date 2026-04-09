@@ -1,22 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo - TechMarket USS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMarket USS | Nuestro Equipo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .team-card {
+      background-color: var(--color-content-bg);
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .team-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      background-color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--color-accent);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <!-- Placeholder para la Navbar -->
-        <nav>Navbar</nav>
-    </header>
-    <main>
-        <h1>Equipo</h1>
-    </main>
-    <footer>
-        <!-- Placeholder para el pie de página -->
-        <p>Pie de página</p>
-    </footer>
+
+  <!-- Top Bar: Login -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <span class="top-bar-text">Bienvenido a TechMarket USS</span>
+      <form class="login-form" onsubmit="event.preventDefault(); alert('Inicio de sesión simulado exitoso.');">
+        <input type="email" placeholder="usuario@correo.com" required class="login-input">
+        <input type="password" placeholder="Contraseña" required class="login-input">
+        <button type="submit" class="btn-login">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Navegación -->
+  <header class="main-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">TechMarket USS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="equipo.html" style="color: var(--color-accent);">Equipo</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="section" style="background-color: var(--color-gray-bg);">
+      <h1 class="section-title">Nuestro Equipo</h1>
+      <p style="text-align: center; color: #4b5563; max-width: 600px; margin: 0 auto;">Conoce a los fundadores y expertos detrás del marketplace de tecnología. Nuestro equipo combina pasión por el hardware con experiencia comercial.</p>
+      
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h3 style="margin-bottom: 0.5rem; color: var(--color-text-dark);">Carlos Rodríguez</h3>
+          <p style="color: var(--color-accent); font-weight: 600; margin-bottom: 1rem;">CEO & Founder</p>
+          <p style="color: #6b7280; font-size: 0.9rem;">Especialista en negocios digitales y entusiasta del overclocking.</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar"><i class="fa-solid fa-code"></i></div>
+          <h3 style="margin-bottom: 0.5rem; color: var(--color-text-dark);">Ana Silva</h3>
+          <p style="color: var(--color-accent); font-weight: 600; margin-bottom: 1rem;">CTO & Lead Developer</p>
+          <p style="color: #6b7280; font-size: 0.9rem;">Experta en desarrollo web y amante del ecosistema de software libre.</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar"><i class="fa-solid fa-headset"></i></div>
+          <h3 style="margin-bottom: 0.5rem; color: var(--color-text-dark);">Felipe Méndez</h3>
+          <p style="color: var(--color-accent); font-weight: 600; margin-bottom: 1rem;">Head of Support</p>
+          <p style="color: #6b7280; font-size: 0.9rem;">A cargo del ensamblaje y control de calidad de todos nuestros productos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechMarket USS</h4>
+        <p>Tu marketplace tecnológico de confianza.</p>
+        <p>Ubicados en el Campus Central.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="productos.html">Tienda</a></li>
+          <li><a href="nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="faq.html">Centro de Ayuda</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: soporte@techmarketuss.cl</p>
+        <p>Tel: +56 9 1234 5678</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechMarket USS. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
