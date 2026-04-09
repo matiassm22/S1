@@ -1,1 +1,1 @@
-# S1
+README indicando qué componentes usó y a qué categoría pertenecen, siguiendo la clasificación trabajada en clases.
